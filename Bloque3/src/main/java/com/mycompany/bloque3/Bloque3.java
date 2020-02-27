@@ -23,7 +23,8 @@ public class Bloque3 {
         
         Fecha actual=new Fecha((byte)31,(byte)4, 222);
         
-        
+        //TO DO Preguntar el ejercicio 3 eso de crear metodo de instancia revisar clase Fecha pues no puedo usar
+        //la funcion del auxiliar creado en el metodo  Mayorque (esta comentado el codigo)
         
         System.out.println(actual);
         System.out.println(actual.esValida(actual));
