@@ -65,9 +65,34 @@ public Perro(String nombre){
         aux+="\nPaseo "+this.paseo;
         return aux;
     }
-
+    /**
+     * Funcion para restar -5 a su variable interna al final de cada buecle del juego
+     * @param orig Tamagotchi original
+     */
+   @Override
+   public void vivir( ){
+    super.vivir();
+    this.setPaseo(paseo+=-5);
+}
     
-    
+    /**
+ * Funcion para saber si se ha muerto el tamagotchi esta sobreescribiendo otra funcion de su superclase
+ * @return true si esta vivo false si esta muerto
+ */
+    @Override
+    public boolean seHaMuerto(){
+        if (super.seHaMuerto()==true||this.paseo==0) {
+            return true;
+        }
+        return false;
+    } 
+    /**
+     * Funcion para aumentar el nivel de paseo +15 al Perro
+     */
+   @Override
+    public void pasear(){
+        this.paseo+=15;
+    }
    
     
 }

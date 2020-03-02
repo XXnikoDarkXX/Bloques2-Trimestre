@@ -13,6 +13,7 @@ public class Fecha {
   private byte dia;//dia de la fecha
    private byte mes;//mes de la fecha
     private int año;//año de la fecha
+    
 /**
  * Constructor de fecha con todos sus parametros
  * @param d dia de la fecha

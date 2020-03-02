@@ -42,7 +42,7 @@ public class  Pez extends Tamagotchi {
         return aux;
                 
     }
-  
+
        
     }
  
