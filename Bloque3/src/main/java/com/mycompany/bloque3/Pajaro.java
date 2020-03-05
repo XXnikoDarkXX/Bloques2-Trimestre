@@ -97,7 +97,7 @@ public class Pajaro extends Tamagotchi {
     /**
      * Funcion para sacar a volar a un pajaro aumenta +15 su nivel de vuelo
      */
-    @Override
+   
     public void volar(){
        this.vuelo+=15;
     }

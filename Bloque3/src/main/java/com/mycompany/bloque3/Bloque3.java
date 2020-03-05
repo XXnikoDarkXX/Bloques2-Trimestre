@@ -55,7 +55,7 @@ public class Bloque3 {
         
         System.out.println("La fecha primera es "+poco1);
         System.out.println("La fecha segunda es "+poco2);
-        System.out.println(actual.mayorQue(poco1,poco2));
+        System.out.println(poco1.mayorQue(poco2));
        
     }
 

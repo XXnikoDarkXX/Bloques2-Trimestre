@@ -237,10 +237,4 @@ public abstract class Tamagotchi {
     public void jugar(){
         this.diversion+=15;
     }
-    public void pasear(){
-        
-    }
-    public void volar(){
-        
-    }
 }

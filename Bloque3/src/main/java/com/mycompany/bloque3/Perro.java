@@ -89,7 +89,7 @@ public Perro(String nombre){
     /**
      * Funcion para aumentar el nivel de paseo +15 al Perro
      */
-   @Override
+
     public void pasear(){
         this.paseo+=15;
     }

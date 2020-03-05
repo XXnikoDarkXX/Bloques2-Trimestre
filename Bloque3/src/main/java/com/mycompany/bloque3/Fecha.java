@@ -57,27 +57,16 @@ public class Fecha {
    }
   
  
-   public boolean mayorQue(Fecha orig,Fecha prin){
+   public boolean mayorQue(Fecha orig){
        
-       Fecha aux =new Fecha((byte)2,(byte)1,2);
-       //TO DO voy a crear otro parametro pues el fecha aux me da bastantes problemas
-       if ((orig.getDia()>prin.getDia()||orig.getMes()>prin.getMes())||orig.getAño()>prin.getAño()) {
+      
+       //TO DO voy a crear otro parametro pues el fecha aux me da bastantes problemas this.
+       if ((orig.getDia()<this.getDia()||orig.getMes()<this.getMes())||orig.getAño()<this.getAño()) {
            System.out.println("La primera fecha es mayor");
            return true;
        }
-       //Preguntar porque no puedo ponerlo todo en un if                 
-       //En un parametro
-       /*if (aux.getDia()>orig.getDia()) {
-           if (aux.getMes()>orig.getMes()) {
-               if (aux.getAño()>orig.getAño()) {
-                   return false;
-               }
-           }
-  
-       }
        
-       return true;*/
-       System.out.println("La segunda fecha es mayor");
+       System.out.println("La segunda fecha es mayor o igual");
        return false;
    }
 /**

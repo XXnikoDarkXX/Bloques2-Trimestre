@@ -49,16 +49,23 @@ public class Juego {
         System.out.println("");
        Tamagotchi jugando=Tamagotchi.nacer();
        
+      //  System.out.println(jugando.getClass().getName());
         System.out.println(jugando);
       byte opcion;
       do{
           
       /*
-    Preguntar eso del getClas().getName() no se hacer que se vea en funcion de la raza sacar a pasar o sacar a volar
+          //TO DO HACER jugando.getClass().getName() Y COPIAR lo que haya en la salida , ponerlo en el if y si es true
+          6 - pasear
+          si es false 6- volar
       */
         System.out.println("Bienvenido al Tamagotchi Estas en los años 90!!!!");
         System.out.println("Escribe una de las siguientes opciones\n\t0 - Salir\n\t1 - No hacer nada\n\t2 - Dar de comer"
-                + "\n\t3 - Dormir\n\t4 - Bañar\n\t5 - Jugar\n\t6 - Pasear\n\t7 - Sacar a volar "); 
+                + "\n\t3 - Dormir\n\t4 - Bañar\n\t5 jugar"); 
+        
+      String comprobacion=  jugando.getClass().getName()=="com.mycompany.bloque3.Perro"?"\n\t6- Pasear2":"\n\t6 - Volar";
+          System.out.println(comprobacion);
+        
           opcion=Byte.parseByte(sc.nextLine());
           switch(opcion){
               case 0: 
@@ -85,12 +92,12 @@ public class Juego {
                   break;
               case 6: 
                   System.out.println("Paseemos");
-                  jugando.pasear();
+                  ((Perro)jugando).pasear();
                    
                   break;
               case 7: 
                   System.out.println("Volemos como un fenix!! ");
-                  jugando.volar();
+                  ((Pajaro)jugando).volar();
                   break;
               default:
                   System.out.println("Vaya que hicistes? pulsastes mala tecla vuelve a intentarlo!!!");
@@ -105,7 +112,7 @@ public class Juego {
           }
         }while(opcion!=0);
       
-        //Preguntar porque no puedo hacer directamente el metodo paseo y vuelo sin usar tamagotchi
+        
     
     }
     
