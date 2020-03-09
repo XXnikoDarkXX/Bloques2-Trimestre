@@ -63,7 +63,7 @@ public class Juego {
         System.out.println("Escribe una de las siguientes opciones\n\t0 - Salir\n\t1 - No hacer nada\n\t2 - Dar de comer"
                 + "\n\t3 - Dormir\n\t4 - Bañar\n\t5 jugar"); 
         
-      String comprobacion=  jugando.getClass().getName()=="com.mycompany.bloque3.Perro"?"\n\t6- Pasear2":"\n\t6 - Volar";
+      String comprobacion=  jugando.getClass().getName()=="com.mycompany.bloque3.Perro"?"\n\t6- Pasear2":(jugando.getClass().getName()=="com.mycompany.bloque3.Pajaro"?"6-Volar":"");
           System.out.println(comprobacion);
         
           opcion=Byte.parseByte(sc.nextLine());
@@ -94,8 +94,7 @@ public class Juego {
                   System.out.println("Paseemos");
                   ((Perro)jugando).pasear();
                    
-                  break;
-              case 7: 
+                 
                   System.out.println("Volemos como un fenix!! ");
                   ((Pajaro)jugando).volar();
                   break;

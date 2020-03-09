@@ -19,9 +19,7 @@ public abstract class Tamagotchi {
     private byte higiene;//Higiene del tamagotchi
     private byte diversion;//Divertsion del tamagothi
 
-    public Tamagotchi() {
 
-    }
 
     /**
      * Constructor de Tamagotchi con todos sus parametros
@@ -161,24 +159,20 @@ public abstract class Tamagotchi {
         Tamagotchi aux = null;
         String cual;
         String nombrecual;
-        byte contador = 0;
         do {
 
             System.out.println("Dime una raza debe de ser Perro,Pajaro o Pez ");
             cual = sca.nextLine();
-            System.out.println("Dime un nombre para la raza");
+            System.out.println("Dime un nombre para el tamagotchi");
             nombrecual = sca.nextLine();
             switch (cual) {
                 case "Perro":
-                    contador = 1;
                     aux = new Perro(nombrecual);
                     break;
                 case "Pajaro":
-                    contador = 1;
                     aux = new Pajaro(nombrecual);
                     break;
                 case "Pez":
-                    contador = 1;
                     aux = new Pez(nombrecual);
                     break;
                 default:
@@ -186,7 +180,7 @@ public abstract class Tamagotchi {
                     break;
             }
 
-        } while (contador != 1);
+        } while (aux==null);
         return aux;
     }
 
@@ -230,6 +224,9 @@ public abstract class Tamagotchi {
      */
     public void bañarse(){
         this.higiene+=15;
+        if(higiene>100){
+            higiene=100;
+        }
     }
     /**
      * Funcion para jugar con el Tamagotchi aumenta 15 el nivel de diversion

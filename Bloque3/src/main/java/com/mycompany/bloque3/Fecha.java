@@ -26,13 +26,7 @@ public class Fecha {
       this.año=a;
   }
   
-  /**
-   * Constructor de animal vacio
-   */
-    public Fecha(){
-      
-  }
-  
+
   
     @Override
     public String toString() {
@@ -62,11 +56,9 @@ public class Fecha {
       
        //TO DO voy a crear otro parametro pues el fecha aux me da bastantes problemas this.
        if ((orig.getDia()<this.getDia()||orig.getMes()<this.getMes())||orig.getAño()<this.getAño()) {
-           System.out.println("La primera fecha es mayor");
            return true;
        }
        
-       System.out.println("La segunda fecha es mayor o igual");
        return false;
    }
 /**

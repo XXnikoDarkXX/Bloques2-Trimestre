@@ -81,7 +81,7 @@ public Perro(String nombre){
  */
     @Override
     public boolean seHaMuerto(){
-        if (super.seHaMuerto()==true||this.paseo==0) {
+        if (super.seHaMuerto()||this.paseo==0) {
             return true;
         }
         return false;
