@@ -65,7 +65,7 @@ public class Juego {
         
       String comprobacion=  jugando.getClass().getName()=="com.mycompany.bloque3.Perro"?"\n\t6- Pasear2":(jugando.getClass().getName()=="com.mycompany.bloque3.Pajaro"?"6-Volar":"");
           System.out.println(comprobacion);
-        
+       
           opcion=Byte.parseByte(sc.nextLine());
           switch(opcion){
               case 0: 

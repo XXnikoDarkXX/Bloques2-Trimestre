@@ -58,6 +58,7 @@ public class Pajaro extends Tamagotchi {
         this.vuelo = vuelo;
     }
 
+    @Override
     public String toString() {
         String aux = "";
         aux += this.getNombre() + " - Pajaro\n";
