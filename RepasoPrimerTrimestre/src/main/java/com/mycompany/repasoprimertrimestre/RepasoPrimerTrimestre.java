@@ -152,12 +152,12 @@ public class RepasoPrimerTrimestre {
             }
         }
         actual=masGrande;
-
+                    
         for (int i = 0; i < numeroArray.length; i++) {
             for (int k = 0; k < numeroArray.length; k++) {
                 if (numeroArray[k] < actual && numeroArray[k] > mayorQue) {
                     actual = numeroArray[k];
-
+                    
                     }
                 }
             destino[i]=actual;
